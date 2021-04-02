@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "805330433747",
+    "project_id": "ninja-atik",
+    "storage_bucket": "ninja-atik.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805330433747:android:647a0bca0a294fc9f5c626",
+        "android_client_info": {
+          "package_name": "com.atik666.ninja_atik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805330433747-5ehterihcdi9jkc86kbp7ss8lb2kionf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3uznlGKm7tth-49YO7Z-MOisBCO5MJhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805330433747-5ehterihcdi9jkc86kbp7ss8lb2kionf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
