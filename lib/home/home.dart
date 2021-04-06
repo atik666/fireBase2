@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ninja_atik/services/auth.dart';
 
 class Home extends StatelessWidget {
+
   final AuthService _auth = AuthService();
 
   @override

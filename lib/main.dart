@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ninja_atik/authenticate/register.dart';
+import 'package:ninja_atik/authenticate/sign_in.dart';
 import 'package:ninja_atik/services/auth.dart';
 import 'package:ninja_atik/wrapper.dart';
 import 'package:provider/provider.dart';
@@ -15,8 +17,14 @@ class MyApp extends StatelessWidget {
     return StreamProvider<User>.value(
       value: AuthService().user,
       child: MaterialApp(
+        initialRoute: Wrapper().routeName,
+        routes: {
+          Wrapper().routeName : (context) => Wrapper(),
+          SignIn().routeName : (context) =>  SignIn(),
+          Register().routeName : (context) =>  Register(),
+        },
         debugShowCheckedModeBanner: false,
-        home: Wrapper(),
+       // home: Wrapper(),
       ),
     );
   }

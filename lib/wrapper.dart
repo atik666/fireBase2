@@ -5,9 +5,10 @@ import 'package:ninja_atik/models/user.dart';
 import 'package:provider/provider.dart';
 
 class Wrapper extends StatelessWidget {
+  final String routeName = '/wrapper';
+
   @override
   Widget build(BuildContext context) {
-
     final user = Provider.of<User>(context);
 
     return user == null ? Authenticate() : Home();
