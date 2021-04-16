@@ -5,7 +5,6 @@ import 'package:ninja_atik/shared/constants.dart';
 import 'package:ninja_atik/shared/loading.dart';
 
 class Register extends StatefulWidget {
-  final String routeName = '/signUp';
   final Function toggleView;
 
   Register({this.toggleView});
@@ -37,7 +36,7 @@ class _RegisterState extends State<Register> {
               actions: [
                 FlatButton.icon(
                   onPressed: () {
-                    Navigator.pop(context);
+                    widget.toggleView();
                   },
                   icon: Icon(Icons.lock_open),
                   label: Text(
