@@ -5,6 +5,7 @@ import 'package:ninja_atik/shared/constants.dart';
 import 'package:ninja_atik/shared/loading.dart';
 
 class SignIn extends StatefulWidget {
+  final String routeName = '/signIn';
   final Function toggleView;
 
   SignIn({this.toggleView});
@@ -36,7 +37,7 @@ class _SignInState extends State<SignIn> {
               actions: [
                 FlatButton.icon(
                   onPressed: () {
-                    widget.toggleView();
+                   widget.toggleView();
                   },
                   icon: Icon(Icons.person),
                   label: Text(
@@ -94,6 +95,11 @@ class _SignInState extends State<SignIn> {
                             if (result == null) {
                               setState(() {
                                 error = 'Could not sign in!';
+                                loading = false;
+                              });
+                            }
+                            if (result.hasData) {
+                              setState(() {
                                 loading = false;
                               });
                             }
