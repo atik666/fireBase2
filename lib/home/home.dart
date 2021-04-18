@@ -5,19 +5,21 @@ import 'package:ninja_atik/services/auth.dart';
 import 'package:provider/provider.dart';
 import '../services/database.dart';
 import 'brewList.dart';
+import 'settingForm.dart';
 
 class Home extends StatelessWidget {
   final AuthService _auth = AuthService();
 
   @override
   Widget build(BuildContext context) {
+
     void _showSettingsPanel() {
       showModalBottomSheet(
           context: context,
           builder: (context) {
             return Container(
               padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 60),
-              child: Text('bottom sheet'),
+              child: SettingsForm(),
             );
           });
     }
